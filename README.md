@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Lisans-GPL-blue.svg?style=flat" alt="Lisans" /> <img src="https://img.shields.io/badge/Durum-Devam Ediyor-yellow.svg?style=flat" alt="Devam Ediyor" /> <img src="https://img.shields.io/badge/Versiyon-1.12-green.svg?style=flat" alt="Versiyon" />
 
-Türkiye Cumhuriyeti Merkez Bankası' web sitesinden günlük kurları çekmeye yarayan program. 
+Türkiye Cumhuriyeti Merkez Bankası'nın web sitesinden günlük kurları çekmeye yarayan program. 
 
 Özellikleri:
 
