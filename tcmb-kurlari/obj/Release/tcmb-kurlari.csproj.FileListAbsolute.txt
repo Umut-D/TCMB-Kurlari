@@ -1,0 +1,27 @@
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.pdb
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.FrmTcmbKurlari.resources
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.Properties.Resources.resources
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.GenerateResource.Cache
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.exe
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.pdb
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csprojResolveAssemblyReference.cache
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe.config
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.pdb
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.FrmTcmbKurlari.resources
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.Properties.Resources.resources
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.GenerateResource.Cache
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.exe
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.pdb
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csprojAssemblyReference.cache
+C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.CoreCompileInputs.cache
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe.config
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.pdb
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.FrmTcmbKurlari.resources
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.Properties.Resources.resources
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.GenerateResource.cache
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.CoreCompileInputs.cache
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.exe
+D:\Downloads\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.pdb

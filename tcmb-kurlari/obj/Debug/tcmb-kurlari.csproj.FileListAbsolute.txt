@@ -1,0 +1,16 @@
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\bin\Debug\tcmb-kurlari.exe
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\bin\Debug\tcmb-kurlari.pdb
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.csprojResolveAssemblyReference.cache
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb_kurlari.frmTCMBKurlari.resources
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb_kurlari.Properties.Resources.resources
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.csproj.GenerateResource.Cache
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.exe
+D:\Belgelerim\C# Uygulamaları\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.pdb
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.exe
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.pdb
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\bin\Debug\tcmb-kurlari.exe
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\bin\Debug\tcmb-kurlari.pdb
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.csprojResolveAssemblyReference.cache
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb_kurlari.FrmTcmbKurlari.resources
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb_kurlari.Properties.Resources.resources
+C:\Users\ZETA\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Debug\tcmb-kurlari.csproj.GenerateResource.Cache
