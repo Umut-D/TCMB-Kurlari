@@ -31,10 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTcmbKurlari));
             this.menu = new System.Windows.Forms.MenuStrip();
             this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dovizKurlariIndir = new System.Windows.Forms.ToolStripMenuItem();
-            this.TCMBSayfasinaGit = new System.Windows.Forms.ToolStripMenuItem();
-            this.cikis = new System.Windows.Forms.ToolStripMenuItem();
-            this.hakkindaTSM = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuTcmbSayfasi = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCikis = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHakkinda = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.tsDurum = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridGorunumu = new System.Windows.Forms.DataGridView();
@@ -49,7 +48,7 @@
             this.menu.ImageScalingSize = new System.Drawing.Size(22, 22);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dosyaToolStripMenuItem,
-            this.hakkindaTSM});
+            this.menuHakkinda});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(780, 31);
@@ -58,40 +57,32 @@
             // dosyaToolStripMenuItem
             // 
             this.dosyaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dovizKurlariIndir,
-            this.TCMBSayfasinaGit,
-            this.cikis});
+            this.menuTcmbSayfasi,
+            this.menuCikis});
             this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
-            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
+            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
             this.dosyaToolStripMenuItem.Text = "Dosya";
             // 
-            // dovizKurlariIndir
+            // menuTcmbSayfasi
             // 
-            this.dovizKurlariIndir.Name = "dovizKurlariIndir";
-            this.dovizKurlariIndir.Size = new System.Drawing.Size(337, 28);
-            this.dovizKurlariIndir.Text = "TCMB Döviz Kurlarını İndir";
-            this.dovizKurlariIndir.Click += new System.EventHandler(this.dovizKurlariIndir_Click);
+            this.menuTcmbSayfasi.Name = "menuTcmbSayfasi";
+            this.menuTcmbSayfasi.Size = new System.Drawing.Size(395, 30);
+            this.menuTcmbSayfasi.Text = "Günün TCMB Döviz Kuru Sayfasına Git";
+            this.menuTcmbSayfasi.Click += new System.EventHandler(this.MenuSayfayaGit_Click);
             // 
-            // TCMBSayfasinaGit
+            // menuCikis
             // 
-            this.TCMBSayfasinaGit.Name = "TCMBSayfasinaGit";
-            this.TCMBSayfasinaGit.Size = new System.Drawing.Size(337, 28);
-            this.TCMBSayfasinaGit.Text = "TCMB Döviz Kurları Sayfasına Git";
-            this.TCMBSayfasinaGit.Click += new System.EventHandler(this.SayfayaGit_Click);
+            this.menuCikis.Name = "menuCikis";
+            this.menuCikis.Size = new System.Drawing.Size(395, 30);
+            this.menuCikis.Text = "Çıkış";
+            this.menuCikis.Click += new System.EventHandler(this.MenuCikis_Click);
             // 
-            // cikis
+            // menuHakkinda
             // 
-            this.cikis.Name = "cikis";
-            this.cikis.Size = new System.Drawing.Size(337, 28);
-            this.cikis.Text = "Çıkış";
-            this.cikis.Click += new System.EventHandler(this.cikis_Click);
-            // 
-            // hakkindaTSM
-            // 
-            this.hakkindaTSM.Name = "hakkindaTSM";
-            this.hakkindaTSM.Size = new System.Drawing.Size(92, 27);
-            this.hakkindaTSM.Text = "Hakkında";
-            this.hakkindaTSM.Click += new System.EventHandler(this.hakkinda_Click);
+            this.menuHakkinda.Name = "menuHakkinda";
+            this.menuHakkinda.Size = new System.Drawing.Size(96, 27);
+            this.menuHakkinda.Text = "Hakkında";
+            this.menuHakkinda.Click += new System.EventHandler(this.MenuHakkinda_Click);
             // 
             // statusStrip
             // 
@@ -106,12 +97,14 @@
             // tsDurum
             // 
             this.tsDurum.Name = "tsDurum";
-            this.tsDurum.Size = new System.Drawing.Size(0, 17);
+            this.tsDurum.Size = new System.Drawing.Size(0, 15);
             // 
             // dataGridGorunumu
             // 
             this.dataGridGorunumu.AllowUserToAddRows = false;
             this.dataGridGorunumu.AllowUserToDeleteRows = false;
+            this.dataGridGorunumu.AllowUserToOrderColumns = true;
+            this.dataGridGorunumu.AllowUserToResizeRows = false;
             this.dataGridGorunumu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridGorunumu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridGorunumu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -119,6 +112,7 @@
             this.dataGridGorunumu.Name = "dataGridGorunumu";
             this.dataGridGorunumu.ReadOnly = true;
             this.dataGridGorunumu.RowHeadersVisible = false;
+            this.dataGridGorunumu.RowHeadersWidth = 57;
             this.dataGridGorunumu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridGorunumu.Size = new System.Drawing.Size(780, 460);
             this.dataGridGorunumu.TabIndex = 2;
@@ -162,10 +156,9 @@
 
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem dosyaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dovizKurlariIndir;
-        private System.Windows.Forms.ToolStripMenuItem TCMBSayfasinaGit;
-        private System.Windows.Forms.ToolStripMenuItem cikis;
-        private System.Windows.Forms.ToolStripMenuItem hakkindaTSM;
+        private System.Windows.Forms.ToolStripMenuItem menuTcmbSayfasi;
+        private System.Windows.Forms.ToolStripMenuItem menuCikis;
+        private System.Windows.Forms.ToolStripMenuItem menuHakkinda;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel tsDurum;
         private System.Windows.Forms.DataGridView dataGridGorunumu;
