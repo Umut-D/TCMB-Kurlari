@@ -2,14 +2,14 @@
 
 namespace tcmb_kurlari.Siniflar
 {
-    class Baglanti : Tarih
+    public static class Baglanti
     {
-        // İnternet bağlantısının olup olmadığını Google'a ping atarak test et
         public static bool Kontrol()
         {
-            PingReply pingDurum = new Ping().Send("www.google.com", 1000);
+            Ping ping = new Ping();
+            PingReply pingCevap = ping.Send("www.google.com", 1000);
 
-            if (pingDurum?.Status == IPStatus.Success)
+            if (pingCevap?.Status == IPStatus.Success)
                 return true;
 
             return false;

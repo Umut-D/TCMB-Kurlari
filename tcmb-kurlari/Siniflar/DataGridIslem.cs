@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace tcmb_kurlari.Siniflar
 {
-    class DataGridIslem
+    public class DataGridIslem
     {
-        private static List<string> SutunAdlari()
+        private List<string> SutunAdlari()
         {
             List<string> sutunAdlari = new List<string>
             {
@@ -22,27 +22,46 @@ namespace tcmb_kurlari.Siniflar
             return sutunAdlari;
         }
 
-        public static void Gorunum(DataGridView dataGridGorunumu)
+        public void Gorunum(DataGridView dataGridGorunumu)
+        {
+            TumSutunlariEtkisizlestir(dataGridGorunumu);
+
+            for (int sutun = 0; sutun < 7; sutun++)
+            {
+                if (IkinciSutunuIptalEt(sutun)) 
+                    continue;
+
+                dataGridGorunumu.Columns[sutun].Visible = true;
+                dataGridGorunumu.Columns[sutun].HeaderText = SutunAdlari().ElementAt(sutun);
+
+                HucreleriSagaHizala(dataGridGorunumu, sutun);
+            }
+
+            BirimSutununKucult(dataGridGorunumu);
+        }
+
+        private void TumSutunlariEtkisizlestir(DataGridView dataGridGorunumu)
         {
             // Tüm sutunları etkisiz hale getir (5 yıl önceki veri alanları ile şimdiki alanlar arasında fark olduğu için, görüntülenecek sabit sütunları seçmek daha mantıklı)
             foreach (DataGridViewBand sutunlar in dataGridGorunumu.Columns)
                 sutunlar.Visible = false;
+        }
 
-            for (int i = 0; i < 7; i++)
-            {
-                // Döviz Cinsi'nin yazdığı ikinci sütunu almaya gerek yok
-                if (i == 2)
-                    continue;
+        private bool IkinciSutunuIptalEt(int i)
+        {
+            // Döviz Cinsi'nin yazdığı ikinci sütunu almaya gerek yok
+            return i == 2;
+        }
 
-                dataGridGorunumu.Columns[i].Visible = true;
-                dataGridGorunumu.Columns[i].HeaderText = SutunAdlari().ElementAt(i);
+        private void HucreleriSagaHizala(DataGridView dataGridGorunumu, int sutun)
+        {
+            // Para birimleri olan hücreleri sağa hizala (Excel stili olsun)
+            if (sutun > 2)
+                dataGridGorunumu.Columns[sutun].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+        }
 
-                // Para birimleri olan hücreleri sağa hizala (Excel stili olsun)
-                if (i > 2)
-                    dataGridGorunumu.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            }
-
-            // Birim sütununu küçült (Yoksa çok göze batıyor)
+        private void BirimSutununKucult(DataGridView dataGridGorunumu)
+        {
             dataGridGorunumu.Columns[0].Width = 45;
         }
     }

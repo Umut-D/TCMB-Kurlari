@@ -124,7 +124,7 @@
             this.dtpTarih.Name = "dtpTarih";
             this.dtpTarih.Size = new System.Drawing.Size(187, 30);
             this.dtpTarih.TabIndex = 3;
-            this.dtpTarih.ValueChanged += new System.EventHandler(this.dtpTarih_ValueChanged);
+            this.dtpTarih.ValueChanged += new System.EventHandler(this.DtpTarih_ValueChanged);
             // 
             // FrmTcmbKurlari
             // 

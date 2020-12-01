@@ -3,65 +3,62 @@ using System.Windows.Forms;
 
 namespace tcmb_kurlari.Siniflar
 {
-    class Tarih
+    public class Tarih
     {
-        private string Gun { get; set; }
-        private string Ay { get; set; }
-        private string Yil { get; set; }
-        private DateTime TarihAl { get; set; }
-        private string _tcmbAdres;
-
-        public string TcmbAdres
-        {
-            get => _tcmbAdres;
-            set => _tcmbAdres = "http://www.tcmb.gov.tr/kurlar/" + value + ".xml";
-        }
+        private string _gun, _ay, _yil;
+        private DateTime _tarihAl;
 
         // TCMB'deki mevcut XML sayfasına erişmek için düzenli link oluştur 
-        public string LinkOlustur(DateTimePicker dtpTarih)
+        public string GunuAl(DateTimePicker dtpTarih)
         {
-            Gun = dtpTarih.Value.Day.ToString("00");
-            Ay = dtpTarih.Value.Month.ToString("00");
-            Yil = dtpTarih.Value.Year.ToString();
+            _gun = dtpTarih.Value.Day.ToString("00");
+            _ay = dtpTarih.Value.Month.ToString("00");
+            _yil = dtpTarih.Value.Year.ToString();
 
+            return TarihtenWebAdresOlustur();
+        }
+
+        private string TarihtenWebAdresOlustur()
+        {
             HaftaSonuKontrol();
 
-            TcmbAdres = Yil + Ay + "/" + Gun + Ay + Yil;
-
-            return TcmbAdres;
+            string gunAyYil = _yil + _ay + "/" + _gun + _ay + _yil;
+            return Web.Adres(gunAyYil);
         }
 
-        // Mevcut günün saati 15:30 geçmişse aynı günü, geçmemişse bir önceki günü seç
-        public DateTime GunKontrol()
-        {
-            TimeSpan saat = DateTime.Now.TimeOfDay;
-            TimeSpan kapanisSaati = new TimeSpan(15, 30, 0);
-            
-            if (saat <= kapanisSaati)
-                return DateTime.Today.AddDays(-1);
-            
-            return DateTime.Today;
-        }
-
-        // Kullanıcı hafta sonundan bir gün seçerse tarihi o haftanın cumasına sabitle
         private void HaftaSonuKontrol()
         {
-            string secilenTarih = Gun + "/" + Ay + "/" + Yil;
-            TarihAl = Convert.ToDateTime(secilenTarih);
+            // Kullanıcı hafta sonundan bir gün seçerse, istem tarihini o haftanın cumasına sabitle
+            string secilenTarih = _gun + "/" + _ay + "/" + _yil;
+            _tarihAl = Convert.ToDateTime(secilenTarih);
 
-            switch (TarihAl.DayOfWeek)
+            switch (_tarihAl.DayOfWeek)
             {
                 case DayOfWeek.Saturday:
-                    TarihAl = TarihAl.AddDays(-1);
+                    _tarihAl = _tarihAl.AddDays(-1);
                     break;
                 case DayOfWeek.Sunday:
-                    TarihAl = TarihAl.AddDays(-2);
+                    _tarihAl = _tarihAl.AddDays(-2);
                     break;
             }
 
-            Gun = TarihAl.Day.ToString("00");
-            Ay = TarihAl.Month.ToString("00");
-            Yil = TarihAl.Year.ToString();
+            GunAyYilDegerleri();
+        }
+
+        private void GunAyYilDegerleri()
+        {
+            _gun = _tarihAl.Day.ToString("00");
+            _ay = _tarihAl.Month.ToString("00");
+            _yil = _tarihAl.Year.ToString();
+        }
+
+        public DateTime GunIciSaatKontrolu()
+        {
+            // Mevcut günün saati 15:30 geçmişse aynı günü, geçmemişse bir önceki günü seç
+            if (DateTime.Now.TimeOfDay <= new TimeSpan(15, 30, 0))
+                return DateTime.Today.AddDays(-1);
+
+            return DateTime.Today;
         }
     }
 }

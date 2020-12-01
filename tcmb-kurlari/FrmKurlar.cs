@@ -8,56 +8,68 @@ namespace tcmb_kurlari
 {
     public partial class FrmTcmbKurlari : Form
     {
+        private readonly Tarih _tarih;
+
         public FrmTcmbKurlari()
         {
             InitializeComponent();
+            _tarih = new Tarih();
         }
-
-        private readonly Tarih _tarih = new Tarih();
 
         private void FrmTcmbKurlari_Load(object sender, EventArgs e)
         {
-            // TCMB'nin ilk XML yayınına başladığı ve mevcut güne göre DateTimePicker'ı kısıtla
-            dtpTarih.MaxDate = _tarih.GunKontrol();
-            dtpTarih.MinDate = new DateTime(1996, 05, 02);
+            TarihAraligiBelirle();
 
-            _tarih.LinkOlustur(dtpTarih);
+            _tarih.GunuAl(dtpTarih);
 
             if (Baglanti.Kontrol())
-                dtpTarih.Click += dtpTarih_ValueChanged;
+                dtpTarih.Click += DtpTarih_ValueChanged;
             else
                 MessageBox.Show(@"Maalesef internet bağlantınız yok. TCMB'nin web sitesine bağlanamazsınız.", @"Bağlantı Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void dtpTarih_ValueChanged(object sender, EventArgs e)
+        private void TarihAraligiBelirle()
         {
-            string link = _tarih.LinkOlustur(dtpTarih);
+            // TCMB'nin ilk XML yayınına başladığı ve mevcut güne göre DateTimePicker'ı kısıtla
+            dtpTarih.MaxDate = _tarih.GunIciSaatKontrolu();
+            dtpTarih.MinDate = new DateTime(1996, 05, 02);
+        }
+
+        private void DtpTarih_ValueChanged(object sender, EventArgs e)
+        {
+            string link = _tarih.GunuAl(dtpTarih);
             try
             {
-                // İstem yapılan sayfanın var olup olmamasına göre işleme devam et
-                DataSet dataSet = new DataSet();
-
-                dataSet.Clear();
-                dataSet.ReadXml(link);
-
-                // Mevcut verileri 2. tablodan alarak işe koyul
-                dataGridGorunumu.DataSource = dataSet.Tables[1];
-                DataGridIslem.Gorunum(dataGridGorunumu);
-
-                tsDurum.Text = new XmlOku().BilgiAl(link);
+                DataGridOlustur(link);
+                tsDurum.Text = XmlOku.BilgiAl(link);
             }
-            // Hafta içine gelen bazı özel günlerde (Örn. 29 Ekim vb.) kur sayfası güncellenmiyor
-            // Bu durumsa program hata veriyor. Bu fonksiyon ile sayfanın veri döndürüp döndürmediği kontrol ediliyor
             catch (Exception)
             {
                 MessageBox.Show(@"İstem yaptığınız güne dair herhangi bir veri bulunamadı. Yarım gün veya resmi tatil olabilir. Başka bir gün seçmeyi deneyin.", @"Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private void DataGridOlustur(string link)
+        {
+            dataGridGorunumu.DataSource = VeriSetiOlustur(link).Tables[1];
+
+            DataGridIslem dataGridIslem = new DataGridIslem();
+            dataGridIslem.Gorunum(dataGridGorunumu);
+        }
+
+        private DataSet VeriSetiOlustur(string link)
+        {
+            // İstem yapılan sayfanın var olup olmamasına göre işleme devam et
+            DataSet dataSet = new DataSet();
+            dataSet.Clear();
+            dataSet.ReadXml(link);
+
+            return dataSet;
+        }
+
         private void MenuSayfayaGit_Click(object sender, EventArgs e)
         {
-            // Kullanıcının belirttiği günün sayfasını aç
-            Process.Start(_tarih.LinkOlustur(dtpTarih));
+            Process.Start(_tarih.GunuAl(dtpTarih));
         }
 
         private void MenuHakkinda_Click(object sender, EventArgs e)
