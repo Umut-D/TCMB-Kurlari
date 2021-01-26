@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
 [assembly: AssemblyProduct("TCMB Kurları")]
-[assembly: AssemblyCopyright("Umut D. | 2015")]
+[assembly: AssemblyCopyright("Umut D. | 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Bütün değerleri belirtebilir ya da Yapı ve Düzeltme Numaralarını varsayılan olarak seçebilirsiniz 
 // Yapı Numaralarını varsayılan yapabilirsiniz:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.4.0")]
-[assembly: AssemblyFileVersion("1.1.4.0")]
+[assembly: AssemblyVersion("1.1.5.0")]
+[assembly: AssemblyFileVersion("1.1.5.0")]

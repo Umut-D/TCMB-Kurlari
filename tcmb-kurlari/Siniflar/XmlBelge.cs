@@ -3,11 +3,11 @@ using System.Xml;
 
 namespace tcmb_kurlari.Siniflar
 {
-    public static class XmlOku
+    public class XmlBelge
     {
-        public static string BilgiAl(string linkBilgisi)
+        public string BultenBilgisiAl(string webLink)
         {
-            XmlReader xmlOku = XmlReader.Create(linkBilgisi);
+            XmlReader xmlOku = XmlReader.Create(webLink);
 
             string bilgi = null;
             while (xmlOku.Read())
@@ -23,7 +23,7 @@ namespace tcmb_kurlari.Siniflar
             return bilgi;
         }
 
-        private static bool ElementVarMi(XmlReader xmlOku)
+        private bool ElementVarMi(XmlReader xmlOku)
         {
             return xmlOku.NodeType != XmlNodeType.Element || xmlOku.Name != "Tarih_Date" || !xmlOku.HasAttributes;
         }

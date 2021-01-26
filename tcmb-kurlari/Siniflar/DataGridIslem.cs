@@ -6,35 +6,19 @@ namespace tcmb_kurlari.Siniflar
 {
     public class DataGridIslem
     {
-        private List<string> SutunAdlari()
-        {
-            List<string> sutunAdlari = new List<string>
-            {
-                "Birim",
-                "İsim",
-                "Döviz Cinsi",
-                "Döviz Alış",
-                "Döviz Satış",
-                "Efektif Alış",
-                "Efektif Satış"
-            };
-
-            return sutunAdlari;
-        }
-
         public void Gorunum(DataGridView dataGridGorunumu)
         {
             TumSutunlariEtkisizlestir(dataGridGorunumu);
 
             for (int sutun = 0; sutun < 7; sutun++)
             {
-                if (IkinciSutunuIptalEt(sutun)) 
+                if (IkinciSutunuIptalEt(sutun))
                     continue;
 
                 dataGridGorunumu.Columns[sutun].Visible = true;
                 dataGridGorunumu.Columns[sutun].HeaderText = SutunAdlari().ElementAt(sutun);
 
-                HucreleriSagaHizala(dataGridGorunumu, sutun);
+                ParaBirimliHucreleriSagaHizala(dataGridGorunumu, sutun);
             }
 
             BirimSutununKucult(dataGridGorunumu);
@@ -47,15 +31,30 @@ namespace tcmb_kurlari.Siniflar
                 sutunlar.Visible = false;
         }
 
-        private bool IkinciSutunuIptalEt(int i)
+        private bool IkinciSutunuIptalEt(int sutunNo)
         {
             // Döviz Cinsi'nin yazdığı ikinci sütunu almaya gerek yok
-            return i == 2;
+            return sutunNo == 2;
         }
 
-        private void HucreleriSagaHizala(DataGridView dataGridGorunumu, int sutun)
+        private List<string> SutunAdlari()
         {
-            // Para birimleri olan hücreleri sağa hizala (Excel stili olsun)
+            List<string> sutunlar = new List<string>
+            {
+                "Birim",
+                "İsim",
+                "Döviz Cinsi",
+                "Döviz Alış",
+                "Döviz Satış",
+                "Efektif Alış",
+                "Efektif Satış"
+            };
+
+            return sutunlar;
+        }
+
+        private void ParaBirimliHucreleriSagaHizala(DataGridView dataGridGorunumu, int sutun)
+        {
             if (sutun > 2)
                 dataGridGorunumu.Columns[sutun].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }

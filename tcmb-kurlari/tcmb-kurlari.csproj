@@ -28,7 +28,7 @@
     <PublisherName>Umut Dökel</PublisherName>
     <SuiteName>TCMB Kurları</SuiteName>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.1.4.%2a</ApplicationVersion>
+    <ApplicationVersion>1.1.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -67,7 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Siniflar\DataGridIslem.cs" />
-    <Compile Include="Siniflar\Baglanti.cs" />
+    <Compile Include="Siniflar\DataSetIslem.cs" />
+    <Compile Include="Siniflar\Internet.cs" />
     <Compile Include="FrmKurlar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +78,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Siniflar\Tarih.cs" />
-    <Compile Include="Siniflar\Web.cs" />
-    <Compile Include="Siniflar\XmlOku.cs" />
+    <Compile Include="Siniflar\XmlBelge.cs" />
     <EmbeddedResource Include="FrmKurlar.resx">
       <DependentUpon>FrmKurlar.cs</DependentUpon>
     </EmbeddedResource>

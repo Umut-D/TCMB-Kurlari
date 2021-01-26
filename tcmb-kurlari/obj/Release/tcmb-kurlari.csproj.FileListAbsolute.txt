@@ -24,3 +24,12 @@ C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.
 C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.CoreCompileInputs.cache
 C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.exe
 C:\Users\Zeta\Desktop\tcmb-kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.pdb
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe.config
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.exe
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\bin\Release\tcmb-kurlari.pdb
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.FrmTcmbKurlari.resources
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\obj\Release\tcmb_kurlari.Properties.Resources.resources
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.GenerateResource.cache
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.csproj.CoreCompileInputs.cache
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.exe
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\tcmb-kurlari\obj\Release\tcmb-kurlari.pdb
