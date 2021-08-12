@@ -1,0 +1,13 @@
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\bin\Debug\TCMB Kurları.exe.config
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\bin\Debug\TCMB Kurları.exe
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\bin\Debug\TCMB Kurları.pdb
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\bin\Debug\TCMB-Library.dll
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\bin\Debug\TCMB-Library.pdb
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TcmbUI.csprojAssemblyReference.cache
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TcmbUI.FrmTcmbKurlari.resources
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TcmbUI.Properties.Resources.resources
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TcmbUI.csproj.GenerateResource.cache
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TcmbUI.csproj.CoreCompileInputs.cache
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TcmbUI.csproj.CopyComplete
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TCMB Kurları.exe
+D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Kurlari\obj\Debug\TCMB Kurları.pdb
