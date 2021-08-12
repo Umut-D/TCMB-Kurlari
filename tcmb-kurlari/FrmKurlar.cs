@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using tcmb_kurlari.Siniflar;
+using TcmbLibrary;
 
-namespace tcmb_kurlari
+namespace TcmbUI
 {
     public partial class FrmTcmbKurlari : Form
     {
@@ -71,7 +71,8 @@ namespace tcmb_kurlari
 
         private void MenuHakkinda_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(@"Bu program ile Türkiye Cumhuriyeti Merkez Bankası'nın (TCMB) resmi web sitesinde yayınlanan ve '2 Mayıs 1996’dan bugüne değin' sunulan döviz alış/satış ve döviz efektif alış/satış bilgilerini görebilirsiniz.", @"Hakkında", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(@"Bu program ile Türkiye Cumhuriyeti Merkez Bankası'nın (TCMB) resmi web sitesinde yayınlanan ve '2 Mayıs 1996’dan bugüne değin' sunulan döviz alış/satış ve döviz efektif alış/satış bilgilerini görebilirsiniz.",
+                @"Hakkında", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void MenuCikis_Click(object sender, EventArgs e)

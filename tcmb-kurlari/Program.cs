@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace tcmb_kurlari
+namespace TcmbUI
 {
     static class Program
     {

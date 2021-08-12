@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace tcmb_kurlari.Siniflar
+namespace TcmbLibrary
 {
     public class DataSetIslem
     {

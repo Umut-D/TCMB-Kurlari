@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml;
 
-namespace tcmb_kurlari.Siniflar
+namespace TcmbLibrary
 {
     public class XmlBelge
     {

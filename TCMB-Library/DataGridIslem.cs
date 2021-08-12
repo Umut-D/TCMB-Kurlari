@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace tcmb_kurlari.Siniflar
+namespace TcmbLibrary
 {
     public class DataGridIslem
     {

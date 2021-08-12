@@ -1,4 +1,4 @@
-﻿namespace tcmb_kurlari
+﻿namespace TcmbUI
 {
     partial class FrmTcmbKurlari
     {

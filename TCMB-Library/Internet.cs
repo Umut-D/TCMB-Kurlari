@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Windows.Forms;
 
-namespace tcmb_kurlari.Siniflar
+namespace TcmbLibrary
 {
     public class Internet
     {

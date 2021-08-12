@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace tcmb_kurlari.Siniflar
+namespace TcmbLibrary
 {
     public class Tarih
     {
