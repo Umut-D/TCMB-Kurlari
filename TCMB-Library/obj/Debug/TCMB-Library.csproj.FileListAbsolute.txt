@@ -1,6 +1,0 @@
-D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Library\bin\Debug\TCMB-Library.dll
-D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Library\bin\Debug\TCMB-Library.pdb
-D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Library\obj\Debug\TCMB-Library.csprojAssemblyReference.cache
-D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Library\obj\Debug\TCMB-Library.csproj.CoreCompileInputs.cache
-D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Library\obj\Debug\TCMB-Library.dll
-D:\Belgelerim\Programlar\C#\+ Github\TCMB-Kurlari\TCMB-Library\obj\Debug\TCMB-Library.pdb
