@@ -2,6 +2,7 @@
 # Bu .gitignore dosyası Microsoft(R) Visual Studio tarafından otomatik olarak oluşturulmuştur.
 ################################################################################
 
+.vs/
 /.vs/tcmb-kurlari/v16
 /.vs/slnx.sqlite
 /.vs/
