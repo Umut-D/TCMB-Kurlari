@@ -17,7 +17,7 @@ namespace TcmbLibrary
                 
                 string bultenNo = xmlOku.GetAttribute("Bulten_No");
                 string tarih = Convert.ToDateTime(xmlOku.GetAttribute("Tarih")).ToLongDateString();
-                bilgi = tarih + @" günü saat 15:30'da belirlenen gösterge niteliğindeki TCMB kurları (Bülten No: " + bultenNo + @")";
+                bilgi = $"{tarih} günü saat 15:30'da belirlenen gösterge niteliğindeki TCMB kurları (Bülten No: {bultenNo})";
             }
 
             return bilgi;

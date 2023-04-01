@@ -1,0 +1,14 @@
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\bin\Release\TCMB Kurları.exe.config
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\bin\Release\TCMB Kurları.exe
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\bin\Release\TCMB Kurları.pdb
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\bin\Release\TCMB-Library.dll
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\bin\Release\TCMB-Library.pdb
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.csproj.AssemblyReference.cache
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.FrmTcmbKurlari.resources
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.Properties.Resources.resources
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.csproj.GenerateResource.cache
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.csproj.CoreCompileInputs.cache
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TcmbUI.csproj.CopyComplete
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TCMB Kurları.exe
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Kurlari\obj\Release\TCMB Kurları.pdb

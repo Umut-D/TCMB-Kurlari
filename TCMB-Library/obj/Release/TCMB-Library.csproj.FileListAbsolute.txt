@@ -1,0 +1,6 @@
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Library\bin\Release\TCMB-Library.dll
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Library\bin\Release\TCMB-Library.pdb
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Library\obj\Release\TCMB-Library.csproj.AssemblyReference.cache
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Library\obj\Release\TCMB-Library.csproj.CoreCompileInputs.cache
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Library\obj\Release\TCMB-Library.dll
+C:\Users\Zeta\Desktop\TCMB-Kurlari\TCMB-Library\obj\Release\TCMB-Library.pdb

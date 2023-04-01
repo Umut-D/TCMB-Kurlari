@@ -2,27 +2,29 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 using TcmbLibrary;
+using TcmbLibrary.DataGrid;
 
 namespace TcmbUI
 {
     public partial class FrmTcmbKurlari : Form
     {
         private readonly Tarih _tarih;
-        private readonly Internet _internet;
+        private readonly WebSitesi _webSitesi;
 
         public FrmTcmbKurlari()
         {
             InitializeComponent();
 
             _tarih = new Tarih();
-            _internet = new Internet(_tarih);
+            _webSitesi = new WebSitesi();
         }
 
         private void FrmTcmbKurlari_Load(object sender, EventArgs e)
         {
             DateTimePickerTarihAraligi();
 
-            if (_internet.BaglantiVarMi())
+            Internet internet = new Internet();
+            if (internet.BaglantiVarMi())
                 dtpTarih.Click += DtpTarih_ValueChanged;
         }
 
@@ -35,7 +37,7 @@ namespace TcmbUI
         private void DtpTarih_ValueChanged(object sender, EventArgs e)
         {
             _tarih.SecilenGun(dtpTarih.Value);
-            string webLink = _internet.OlusturulanWebAdresi();
+            string webLink = _webSitesi.Adres(_tarih);
 
             try
             {
@@ -57,16 +59,16 @@ namespace TcmbUI
 
         private void DataGridOlustur(string link)
         {
-            DataSetIslem dataSetIslem = new DataSetIslem();
-            dataGridGorunumu.DataSource = dataSetIslem.Olustur(link).Tables[1];
+            var dataSet = new DataSetIslem();
+            dataGridGorunumu.DataSource = dataSet.Olustur(link).Tables[1];
 
-            DataGridIslem dataGrid = new DataGridIslem();
-            dataGrid.Gorunum(dataGridGorunumu);
+            var dataGrid = new DataGridIslem(dataGridGorunumu);
+            dataGrid.Gorunum();
         }
 
         private void MenuSayfayaGit_Click(object sender, EventArgs e)
         {
-            Process.Start(_internet.OlusturulanWebAdresi());
+            Process.Start(_webSitesi.Adres(_tarih));
         }
 
         private void MenuHakkinda_Click(object sender, EventArgs e)
